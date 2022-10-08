@@ -1,0 +1,30 @@
+5 points for Recursion:
+    -> When to use recursion? Whenever a problem can be divided into smaller sub problems
+    -> Recursion Tree
+    -> Understand Memory Stack (Recursive Stack)
+    -> Base condition
+    -> Recurrence relation
+
+* Recursive solution takes more memory space
+
+---------------------------------
+
+For fibonacci:
+
+0,1,1,2,3,5,8,......
+
+f(n) = f(n-1) + f(n-1)  -> Recurrence relation
+
+say n=3;
+
+                            f(3)
+                            /   \
+                        f(2)
+                        /   \
+                    f(1)
+                    /       
+                 f(0)
+                   |
+            (base condition),condition fails here, so returns back    
+    
+  ##  space complexity O(n)
