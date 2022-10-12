@@ -5,3 +5,38 @@
 
 # Input: 14
 # Output: False
+
+def isPerfectSquare(num):
+    start = 1
+    end = num-1
+
+    while start <= end:
+        mid = start + (end-start)//2
+
+        squared = mid*mid
+
+        if squared == num:
+            return True
+
+        if squared > num:
+            end = mid -1 
+        else:
+            start = mid + 1
+
+    return False
+
+
+# DRIVER CODE
+
+if __name__ == "__main__":
+
+
+    number = 19
+
+    isPerfect = isPerfectSquare(number)
+
+    if isPerfect:
+        print(f"{number} is Perfect Square")
+    else:
+        print(f"{number} is NOT a Perfect Square")
+        
